@@ -59,6 +59,9 @@ searchInput.addEventListener('input', async e => {
   } else if (filtered.length >= 10) {
     container.innerHTML= `<h3>Demasiados paises, especifica tu busqueda</h3>`
 
+  }else if (filtered.length === 0) {
+    container.innerHTML= `<h3>El nombre del país ingresado no existe</h3>`
+  
   } else if (filtered.length <=10 && filtered.length!=1){
     container.innerHTML='';
     filtered.forEach(country => {
