@@ -89,7 +89,7 @@ searchInput.addEventListener('input', async e => {
     <h3>${p.name.common}</h3>
      <p>Capital: ${p.capital}</p>
      <p>Continente: ${p.continents}</p>
-     <p>Habitantes: ${p.population.toLocaleString()}</p>
+     <p>Habitantes: ${p.population.toLocaleString("es-ES")}</p>
      <p>Temperatura: ${clima.main.temp}°C</p>
      <p>Zona Horaria: ${p.timezones}</p>
      <p class="clima">Clima:<img src="https://openweathermap.org/img/wn/${clima.weather[0].icon}@2x.png" 
